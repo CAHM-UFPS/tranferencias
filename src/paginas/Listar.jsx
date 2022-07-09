@@ -1,6 +1,7 @@
 import Tabla from "../components/Tabla";
+import EncTabla from "../components/EncTabla";
 
-function Listar({transferencias}) {
+function Listar({ transferencias }) {
     return (
         <div>
             <div>
@@ -8,22 +9,13 @@ function Listar({transferencias}) {
             </div>
             <div>
                 <table className="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Emisor</th>
-                            <th scope="col">Receptor</th>
-                            <th scope="col">Fecha Transferencia</th>
-                            <th scope="col">Monto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {transferencias.map((datos)=>(
-                            <Tabla 
-                                key={datos.id}
-                                datos={datos}
-                            />
-                        ))}
-                    </tbody>
+                    <EncTabla />
+                    {transferencias.map((datos) => (
+                        <Tabla
+                            key={datos.id}
+                            datos={datos}
+                        />
+                    ))}
                 </table>
             </div>
         </div>
