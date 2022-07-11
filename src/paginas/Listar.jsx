@@ -5,9 +5,9 @@ function Listar({ transferencias }) {
     return (
         <div>
             <div>
-                <h3>Transferencias Realizadas</h3>
+                <h3>{transferencias.length>0? 'Transferencias Realizadas' : 'No hay transferencias'}</h3>
             </div>
-            <div>
+            <div className='container shadow p-3 mb-5 bg-white rounded' id='contenido'>
                 <table className="table">
                     <EncTabla />
                     {transferencias.map((datos) => (

@@ -1,3 +1,5 @@
+@import 'react-toastify/dist/ReactToastify.css';
+
 body{
     background-color: #F5FAFA;
 }
