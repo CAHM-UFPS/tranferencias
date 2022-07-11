@@ -19,7 +19,7 @@ function App() {
         <Route path='/' element={<Layout/>}>
           <Route path='registro' element={<Registro transferencias={transferencias} setTransferencias={setTransferencias}/>}/>
           <Route path='listar' element={<Listar transferencias={transferencias}/>}/>
-          <Route path='mistransf' element={<MisTransferencias/>}/>
+          <Route path='mistransf' element={<MisTransferencias transferencias={transferencias}/>}/>
           <Route path='recibidas' element={<Recibidas/>}/>
         </Route>
       </Routes>

@@ -4,9 +4,9 @@ import Navegacion from '../components/Navegacion';
 function Layout(){
     return(
         <div>
-            <header>
+            <nav>
                 <Navegacion/>
-            </header>
+            </nav>
             <div>
                 <Outlet/>
             </div>
